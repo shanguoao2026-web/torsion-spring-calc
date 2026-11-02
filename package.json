@@ -1,0 +1,28 @@
+{
+  "name": "torsion-spring-calc",
+  "version": "1.0.0",
+  "description": "Helical torsion spring design checks",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "bin": {
+    "torsion-spring-calc": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node test/cli.test.js",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "^5.7.0"
+  }
+}
